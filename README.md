@@ -4,7 +4,7 @@ Visual Inspection of Shuttlecock(Badminton Shuttles).
 Good and defective shuttlecock are classified.  
 The predict result, accuracy, and FPS are displayed in the upper left corner of the window.  
 
-TODO: 動画貼る
+![demo](https://github.com/Souya-Co-Ltd/shuttlecock_inspection/blob/main/imgs/demo.gif)
 
 # Requirement
 ## Hardware
@@ -88,16 +88,13 @@ $ pip install --pre --extra-index-url https://developer.download.nvidia.com/comp
 ```
 
 ## Clone project
-TODO：Gitリポジトリ作ってリンク書く
 ```console
 $ git clone https://github.com/Souya-Co-Ltd/shuttlecock_inspection
 ```
 
 # Running
 ```console
-export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1
-<!-- export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1:/lib/aarch64-linux-gnu/libGLdispatch.so.0 -->
-
+$ export LD_PRELOAD=/usr/lib/aarch64-linux-gnu/libgomp.so.1:/lib/aarch64-linux-gnu/libGLdispatch.so.0
 $ cd [ShuttlecockInspection path]
 $ python3 run_shuttlecock_inspection.py
 ```
@@ -109,16 +106,8 @@ For example, to use the camera in "/dev/video1", execute as follows.
 $ python3 run_shuttlecock_inspection.py -d /dev/video1
 ```
 
-```console
-tf -> onnx
-$ python3 -m tf2onnx.convert --inputs sequential_21_input:0[1,224,224,3] --inputs-as-nchw sequential_21_input:0 --saved-model ./model/model.savedmodel --output ./model/mymodel.onnx
-
-onnx -> TensorRT
-$ /usr/src/tensorrt/bin/trtexec --onnx=/home/souya/shuttlecock_inspection/model/mymodel.onnx --saveEngine=/home/souya/shuttlecock_inspection/model/engine.trt
-```
-
 # Video
-TODO：動画のリンク貼る
+
 
 # Author
 Souya Co., Ltd
