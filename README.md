@@ -18,6 +18,11 @@ The predict result, accuracy, and FPS are displayed in the upper left corner of 
 * CV2 4.5.1(GSTREAMER support)
 
 # Setup
+## Clone project
+```console
+$ git clone https://github.com/Souya-Co-Ltd/shuttlecock_inspection
+```
+
 ## Install and upgrade pip3
 ```console
 $ sudo apt-get -y update
@@ -85,11 +90,6 @@ $ pip install -U --no-deps numpy==1.19.4 future==0.18.2 mock==3.0.5 keras_prepro
 $ sudo env H5PY_SETUP_REQUIRES=0
 $ pip install -U h5py==3.1.0
 $ pip install --pre --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v50 tensorflow==2.9.1+nv22.06 tensorflow-io
-```
-
-## Clone project
-```console
-$ git clone https://github.com/Souya-Co-Ltd/shuttlecock_inspection
 ```
 
 # Running
