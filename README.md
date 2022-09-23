@@ -107,7 +107,7 @@ $ python3 run_shuttlecock_inspection.py -d /dev/video1
 ```
 
 # Video
-
+[YouTube](https://youtu.be/AlcIkxrt85A)
 
 # Author
 Souya Co., Ltd
